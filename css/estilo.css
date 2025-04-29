@@ -1,0 +1,259 @@
+body{
+	/*background-image es para imagen d fondo*/
+	background-image:url("../imagenes/fondo.jpg");
+	/*font-family tipo de letra*/
+	font-family:gealova;
+	/* color es color de letra*/
+	color:"#f2d7d5";
+	/*font-size es tamaño de letrasindicado en pixeles*/
+	font-size:40px;
+	text-align:center;
+}
+hr{
+	border:6px solid #5D4037;
+	width:80%;
+	border-radius:5px
+}
+p{
+	font-family:miraden;
+	text-align:justify;
+	font-size:20px;
+	color:#5D4037;
+	/* font es letras negritas*/
+	font-weight:bold;
+    line-height:1.5;
+    letter-spacing:2px;
+	
+}
+table,tr,td{
+	border:1px solid #5D4037;
+	border-spacing:0px;
+	background-color:#8D6E63;
+	font-size:20px;
+	text-align:center;
+	
+	
+	
+}
+/*clase*/
+.pie{
+	font-family:miraden;
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	color:#5D4037;
+}
+.encabezado{
+	font-family:gealova;
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+	color:#5D4037;
+}
+/*divs*/
+div#top{
+	font-family:copeland;
+	width:100%;
+	height:75px;
+	
+	/*background-image:linear-gradient(#5D4037, #f2d7d5 );*/
+	
+	/*background-image:radial-gradient(#5D4037, #f2d7d5 );*/
+	
+    background-image:conic-gradient(#FADBD8,#f2d7d5);
+}
+div#ppag{
+	width:100%;
+	height:100px;
+	background-image:radial-gradient(#FADBD8,#f2d7d5);
+}
+/*carrousel de imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+    height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller> a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows > a > i {
+	color:white;
+}
+/*cajas*/
+.caja{
+height:300px;
+width:250px;
+background:#eee;
+border:1px solid #eee;
+margin:5px;
+color:black;
+text-align:center;
+display:inline-block
+}
+.caja:hover{
+	box-shadow:0 0 10px #5D4037;
+	transform:scale(1.3);
+	
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:#5D4037;
+	font-weight:bold;
+	
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+	color:#5D4037;
+}
+.caja2{
+	font-family:gealova;
+	height:200px;
+	width:500;
+	background:#8D6E63;
+	border:5px solid #FADBD8;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.texto1{
+	font-family:gealova;
+	text-align:center;
+	font-size:8px;
+	font-weight:bold;
+    color:#8D6E63;
+	background-color:#8D6E63;
+}
+/*menu de navegacion*/
+.navegacion{
+	display:flex;
+	height:100;
+	
+}
+.navegacion-item{
+	flex:1;
+	color:#5D4037;
+	font-weight:bold;
+    font-size:15px;
+	display:flex;
+    transition:flex-grow 0.2s;
+	justify-content:center;
+    alingn-items:center;
+
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#FADBD8;
+}
+.navegacion-item:nth-child(2){
+	background: #8D6E63;
+}
+.navegacion-item:nth-child(3){
+	background:#FADBD8;
+}
+.navegacion-item:nth-child(4){
+	background: #8D6E63;
+}
+.imagen {
+    display: flex; 
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ccc; 
+    padding: 20px;
+}
+.imagen img{
+    max-width: 900px; 
+    margin-right: 50px;
+}
+.info{
+    flex: 1; 
+	}
+.luis{
+	font-family:gealova;
+	font-size:20px;
+	font-weight:bold;
+	color:#5D4037;
+}
+/*fuentes*/
+@font-face{
+	font-family:miraden;
+	src:url(../fuentes/Miraden Florale.otf);
+}
+@font-face{
+	font-family:gealova;
+	src:url(../fuentes/Gealova.otf);
+}
+@font-face{
+	font-family:copeland;
+	src:url(../fuentes/Copeland.otf);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
